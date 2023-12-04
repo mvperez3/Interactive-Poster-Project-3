@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+#home-screen{
+
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../media/images/whitegrid-02.png), url(../media/images/experimental2.jpg);
+    /* to use multiple backgrounds use a comma and think of how you want to layer these images, THE ORDER */
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+
+#am-i{
+    position: absolute;
+    color: white;
+    font-family:'Bebas Neue', sans-serif;
+    font-size: 4.5rem;
+    text-align: center;
+    top:25%;
+    left:28%;   
+    letter-spacing: 3px;
+    /* filter: blur(0.007em); */
+}
+
+
+
+
+#am-i2{
+    position: absolute;
+    color: white;
+    font-family:'Bebas Neue', sans-serif;
+    font-size: 4.5rem;
+    text-align: center;
+    top:40%;
+    left:28%;   
+    letter-spacing: 3px;
+    opacity: 50%;
+
+}
+
+#am-i3{
+    position: absolute;
+    color: white;
+    font-family:'Bebas Neue', sans-serif;
+    font-size: 4.5rem;
+    text-align: center;
+    top:55%;
+    left:28%;   
+    letter-spacing: 3px;
+    opacity: 20%;
+
+}
+
+#ctrlz{
+position: absolute;
+ font-family:'Kanit', sans-serif; 
+ color: white;
+ font-size:2rem;
+top:2%;
+right:22%;
+}
+
+
+#error{
+ position: absolute;
+ font-family:'Kanit', sans-serif; 
+ color: white;
+ font-size:5rem;
+top:30%;
+right:5%;
+}
+
+
+#error2{
+position: absolute;
+ font-family:'Kanit', sans-serif; 
+ color: white;
+ font-size:3rem;
+top:40%;
+left:15%;
+}
+
+
+#error3{
+position: absolute;
+ font-family:'Kanit', sans-serif; 
+ color: white;
+ font-size:4rem;
+bottom:15%;
+right:45%;
+}
+
+#not-good{
+position: absolute;
+left: 13%;
+top:10%;
+font-family:'Kanit', sans-serif; 
+color: white;
+font-size: 2rem;
+/* animation:changenot-good 5s infinite; */
+}
+
+
+@keyframes changenot-good
+{
+    0% {font-size: 2rem;} 
+    50%{font-size: 4rem;}
+   100%{font-size:2rem;}
+}
+
+.animate-text{
+  animation:changenot-good 10s;
+}
+
+
+
+
+#ctrlz-2{
+position:absolute;
+font-family: 'Kanit', sans-serif;
+color: white;
+font-size:2rem;
+top:25%;
+left: 8%;
+}
+
+#artblock{
+position: absolute;
+font-family: 'Kanit', sans-serif;
+color: white;
+font-size: 3rem;
+right: 10%;
+top:13%;
+}
+
+
+
+#artblock-2{
+position:absolute;
+font-family: 'Kanit', sans-serif;
+color: white;
+font-size:3rem;
+top:60%;
+left:5%;
+}
+
+#quit{
+position:absolute;
+font-family: 'Kanit', sans-serif;
+color: white;
+font-size:2rem;
+right:5%;
+bottom:40%;
+}
+
+#their-work{
+position:absolute;
+font-family: 'Kanit', sans-serif;
+color: white;
+font-size:2rem;
+bottom:10%;
+left:7%;
+max-width: 30%;
+/* helps me with the lenght on text */
+}
+
+#artblock-3{
+position: absolute;
+font-family: 'Kanit', sans-serif;
+color: white;
+font-size:3rem;
+bottom:13%;
+right:20%;
+
+}
+
+#ctrlz-3{
+ position:absolute;
+ font-family: 'Kanit', sans-serif;
+ color: white;
+ font-size:1.5rem;
+ right:18%;
+ bottom:29%;
+}
+
+#escape{
+font-family: 'Kanit', sans-serif;
+ color: white;
+ font-size:1rem;
+ width:100vw;
+ filter:blur(.5px);
+}
+
+#escape2{
+ position: absolute;
+ font-family: 'Kanit', sans-serif;
+ color: white;
+ font-size:1rem;
+ bottom: 1%;
+ filter:blur(.5px);
+ width: 100vw;
+}
+
+#shape{
+  position: absolute;
+  width:50vw;
+  height:55vh;
+  top:6%;
+ left:-13%;
+}
+
+#shape2{
+  position: absolute;
+  width:50vw;
+  height:55vh;
+  top:-17%;
+ right:1%;
+}
+
+#shape3{
+  position:absolute;
+  width:40vw;
+  height:50vh;
+  bottom:3.5%;
+  right:1%; 
+
+}
+
+
+#am-i{
+    animation: glitch 1s linear infinite;
+  }
+  
+  @keyframes glitch{
+    2%,64%{
+      transform: translate(2px,0) skew(0deg);
+    }
+    4%,60%{
+      transform: translate(-2px,0) skew(0deg);
+    }
+    62%{
+      transform: translate(0,0) skew(5deg); 
+    }
+  }
+  
+  div:before,
+  div:after{
+    content: attr(title);
+    position: absolute;
+    left: 0;
+  }
+  
+  div:before{
+    animation: glitchTop 1s linear infinite;
+    clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+  }
+  
+  @keyframes glitchTop{
+    2%,64%{
+      transform: translate(2px,-2px);
+    }
+    4%,60%{
+      transform: translate(-2px,2px);
+    }
+    62%{
+      transform: translate(13px,-1px) skew(-13deg); 
+    }
+  }
+  
+  div:after{
+    animation: glitchBotom 1.5s linear infinite;
+    clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+  }
+  
+  @keyframes glitchBotom{
+    2%,64%{
+      transform: translate(-2px,0);
+    }
+    4%,60%{
+      transform: translate(-2px,0);
+    }
+    62%{
+      transform: translate(-22px,5px) skew(21deg); 
+    }
+  }
+
+  #am-i2{
+    animation: glitch 1s linear infinite;
+  }
+  
+  @keyframes glitch{
+    2%,64%{
+      transform: translate(2px,0) skew(0deg);
+    }
+    4%,60%{
+      transform: translate(-2px,0) skew(0deg);
+    }
+    62%{
+      transform: translate(0,0) skew(5deg); 
+    }
+  }
+  
+  div:before,
+  div:after{
+    content: attr(title);
+    position: absolute;
+    left: 0;
+  }
+  
+  div:before{
+    animation: glitchTop 1s linear infinite;
+    clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+  }
+  
+  @keyframes glitchTop{
+    2%,64%{
+      transform: translate(2px,-2px);
+    }
+    4%,60%{
+      transform: translate(-2px,2px);
+    }
+    62%{
+      transform: translate(13px,-1px) skew(-13deg); 
+    }
+  }
+  
+  div:after{
+    animation: glitchBotom 1.5s linear infinite;
+    clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+  }
+  
+  @keyframes glitchBotom{
+    2%,64%{
+      transform: translate(-2px,0);
+    }
+    4%,60%{
+      transform: translate(-2px,0);
+    }
+    62%{
+      transform: translate(-22px,5px) skew(21deg); 
+    }
+  }
+
+  #am-i3{
+    animation: glitch 1s linear infinite;
+  }
+  
+  @keyframes glitch{
+    2%,64%{
+      transform: translate(2px,0) skew(0deg);
+    }
+    4%,60%{
+      transform: translate(-2px,0) skew(0deg);
+    }
+    62%{
+      transform: translate(0,0) skew(5deg); 
+    }
+  }
+  
+  div:before,
+  div:after{
+    content: attr(title);
+    position: absolute;
+    left: 0;
+  }
+  
+  div:before{
+    animation: glitchTop 1s linear infinite;
+    clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+  }
+  
+  @keyframes glitchTop{
+    2%,64%{
+      transform: translate(2px,-2px);
+    }
+    4%,60%{
+      transform: translate(-2px,2px);
+    }
+    62%{
+      transform: translate(13px,-1px) skew(-13deg); 
+    }
+  }
+  
+  div:after{
+    animation: glitchBotom 1.5s linear infinite;
+    clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+  }
+  
+  @keyframes glitchBotom{
+    2%,64%{
+      transform: translate(-2px,0);
+    }
+    4%,60%{
+      transform: translate(-2px,0);
+    }
+    62%{
+      transform: translate(-22px,5px) skew(21deg); 
+    }
+  }
+
+
+  
